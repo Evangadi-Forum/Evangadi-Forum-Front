@@ -1,0 +1,126 @@
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, #3b455a, #4a5568); /* Gradient background */
+  color: rgb(243, 236, 236);
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* You could replace this with a Google Font for more style */
+}
+
+/* Container for footer content */
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: white;
+}
+
+/* Section headings */
+.footer_container h2 {
+  color: #f3f2ef;
+}
+
+/* Individual sections of the footer */
+.footer_left,
+.footer_middle,
+.footer_right {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Left Section: Logo and Social Media Icons */
+.footer_left img {
+  width: 150px; /* Adjust the logo size */
+  margin-bottom: 10px;
+  border-radius: 10px; /* Rounded corners for the logo */
+  transition: transform 0.3s; /* Logo hover effect */
+}
+
+.footer_left img:hover {
+  transform: scale(1.05); /* Slightly enlarge the logo on hover */
+}
+
+.footer_left svg {
+  font-size: 40px; /* Increased icon size */
+  color: #fcfafa;
+  margin: 0 15px; /* Increased spacing between icons */
+  transition: transform 0.3s, color 0.3s; /* Icon hover effects */
+  cursor: pointer;
+  border: 2px solid transparent; /* Initial border */
+  border-radius: 50%; /* Circular icon background */
+  padding: 5px; /* Space for the border */
+}
+
+.footer_left svg:hover {
+  color: #f0a500; /* Hover color */
+  transform: scale(1.1); /* Scale up icon on hover */
+  border: 2px solid #f0a500; /* Highlight border on hover */
+}
+
+/* Middle Section: Useful Links */
+.footer_middle h2 {
+  font-size: 20px; /* Slightly larger heading */
+  margin-bottom: 15px;
+}
+
+.footer_links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_links li {
+  margin-bottom: 10px;
+}
+
+.footer_links a {
+  color: #fff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer_links a:hover {
+  color: #f0a500; /* Change color on hover */
+}
+
+/* Right Section: Contact Info */
+.footer_right h2 {
+  font-size: 20px; /* Slightly larger heading */
+  margin-bottom: 15px;
+}
+
+.footer_right p,
+.footer_right a {
+  margin: 5px 0;
+  color: #f3f2ef;
+  text-decoration: none;
+}
+
+.footer_right a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_left,
+  .footer_middle,
+  .footer_right {
+    margin-bottom: 20px;
+  }
+
+  .footer_left img {
+    margin: 0 auto;
+  }
+
+  .footer_left svg {
+    margin: 0 5px;
+  }
+}

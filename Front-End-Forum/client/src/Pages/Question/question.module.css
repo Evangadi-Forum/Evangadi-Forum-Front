@@ -1,0 +1,133 @@
+/* Container styling */
+.container {
+  width: 85%;
+  max-width: 800px; /* Limit max width for better readability */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px; /* Increased padding for better spacing */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Steps to write a question */
+.heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 10px; /* Reduced margin for better alignment */
+  font-family: "Comic Neue", cursive;
+  text-align: center;
+}
+
+.divider {
+  border: 1px solid #fe8082; /* Changed to solid border */
+  
+  margin: 0 auto; /* Center the divider */
+}
+
+.questionSteps {
+  padding-left: 20px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-left: 10px; /* Reduced margin for better alignment */
+  font-family: "Comic Neue", cursive;
+}
+
+.questionSteps li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+  position: relative; /* Position relative for icon placement */
+}
+
+.icon {
+  margin-right: 10px;
+  color: #007bff; /* Color for icons */
+}
+
+/* Form styling */
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.form input[type="text"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.form input[type="text"]::placeholder,
+.form textarea::placeholder {
+  color: #999;
+}
+
+.form textarea {
+  height: 120px; /* Increased height for better visibility */
+  resize: none; /* Disable resizing for better layout control */
+}
+
+/* Focus effect for input and textarea */
+.form input[type="text"]:focus,
+.form textarea:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Glow effect on focus */
+}
+
+/* Button styling */
+.button {
+  display: block;
+  width: auto;
+  padding: 10px 15px; /* Increased padding for better click area */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto; /* Center button with margin */
+  transition: background-color 0.3s ease, transform 0.2s; /* Transition for button */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Response message styling */
+.responseMessage {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ff3333;
+  font-weight: bold; /* Make the response message bold */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    width: 95%; /* Full width for small screens */
+  }
+
+  .questionSteps li {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .form input[type="text"],
+  .form textarea {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .button {
+    padding: 8px 12px; /* Adjust button padding */
+    font-size: 14px; /* Adjust font size */
+  }
+}

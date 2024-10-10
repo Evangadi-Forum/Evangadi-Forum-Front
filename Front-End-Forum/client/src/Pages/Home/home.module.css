@@ -1,0 +1,79 @@
+.forum_container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 20px;
+  background-image: url("../../image/bg-svg.svg");
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents repeating of the image */
+  background-position: center center; /* Centers the image */
+  position: relative; 
+  transition: background-color 0.3s; /* Transition for background change */
+}
+
+.text_content {
+  flex: 1; /* Allow the text section to take space */
+  text-align: center; /* Center the text */
+  margin-right: 20px; /* Space between text and image */
+  font-size: 24px;
+  margin: 50px;
+  transition: transform 0.3s; /* Transition for scaling */
+}
+
+.text_content:hover {
+  transform: scale(1.05); /* Scale up on hover for emphasis */
+}
+
+.image_content {
+  flex: 1; /* Allow the image section to take space */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  transition: transform 0.3s; /* Transition for scaling */
+}
+
+.image_content:hover {
+  transform: scale(1.05); /* Scale up on hover for emphasis */
+}
+
+.image_content img {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Transition for image scaling */
+}
+
+.image_content img:hover {
+  transform: scale(1.1); /* Slightly scale image on hover */
+}
+
+button {
+  padding: 10px 20px; /* Add some padding */
+  background-color: #eb8432; /* Button color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 25px; /* Oval shape */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #333; /* Change color on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.join_now {
+  background-color: #eb8432; /* Button color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 25px; /* Oval shape */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  font-size: 24px;
+}
+
+.join_now:hover {
+  background-color: #333; /* Change color on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
